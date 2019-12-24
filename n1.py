@@ -6,14 +6,14 @@ if x > y:
 else:
 	t += x
 
-r = 10**20
+r = 10**32
 l = 0
+n -= 1
 
 while r-l > 1:
-	m = (l + r)/2
+	m = (l + r)//2
 	if m/x + m/y >= n:
 		r = m
 	else:
 		l = m
-
-print(int(m + t))
+print(r+t)
